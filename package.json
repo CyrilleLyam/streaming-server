@@ -1,0 +1,27 @@
+{
+  "name": "streaming-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --env-file=.env index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyrilleLyam/streaming-server.git"
+  },
+  "type": "module",
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CyrilleLyam/streaming-server/issues"
+  },
+  "homepage": "https://github.com/CyrilleLyam/streaming-server#readme",
+  "description": "",
+  "dependencies": {
+    "chhlat-logger": "^1.1.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

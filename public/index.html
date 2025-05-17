@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Streaming</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: #0e0e0e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+      }
+
+      video {
+        width: 80%;
+        max-width: 960px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        background-color: #000;
+        outline: none;
+      }
+
+      @media (max-width: 768px) {
+        video {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <video id="videoPlayer" controls playsinline preload="metadata">
+      <source src="/video" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
